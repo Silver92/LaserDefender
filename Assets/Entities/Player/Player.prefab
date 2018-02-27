@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  projectile: {fileID: 1125529960857440, guid: 7bb13c25c76e84aeebc2f691213a7069, type: 2}
 --- !u!212 &212429460485082128
 SpriteRenderer:
   m_ObjectHideFlags: 1
