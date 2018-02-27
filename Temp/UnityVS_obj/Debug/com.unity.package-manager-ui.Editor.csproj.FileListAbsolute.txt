@@ -1,0 +1,2 @@
+/Users/silver/Documents/Games/LaserDefender/Temp/UnityVS_obj/Debug/com.unity.package-manager-ui.Editor.csprojResolveAssemblyReference.cache
+/Users/silver/Documents/Games/LaserDefender/Temp/UnityVS_obj/Debug/com.unity.package-manager-ui.Editor.csproj.CoreCompileInputs.cache
