@@ -318,11 +318,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Entities\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Entities\EnemyFormation\EnemySpawner.cs" />
     <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
+    <Compile Include="Assets\Entities\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Shredder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="\Users\silver\Documents\Games\LaserDefender\Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />

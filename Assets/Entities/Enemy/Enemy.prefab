@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4613506120153656}
   - component: {fileID: 212370860263316644}
+  - component: {fileID: 50014608627151790}
+  - component: {fileID: 60413870004099626}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -34,12 +36,70 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285057542513864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.2727615, y: 10.6315975, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50014608627151790
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285057542513864}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &60413870004099626
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285057542513864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.93, y: 0.84}
+    newSize: {x: 0.93, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.09877825, y: -0.3834076}
+      - {x: -0.1471703, y: -0.17294788}
+      - {x: 0.13401043, y: -0.16751194}
+      - {x: 0.08430314, y: -0.3749447}
+      - {x: 0.25807106, y: -0.43630886}
+      - {x: 0.477202, y: 0.18152905}
+      - {x: 0.29776597, y: 0.41817665}
+      - {x: 0.08823717, y: 0.34078693}
+      - {x: 0.08017385, y: 0.23463821}
+      - {x: -0.082505345, y: 0.23420334}
+      - {x: -0.09052932, y: 0.3394289}
+      - {x: -0.3146634, y: 0.43220234}
+      - {x: -0.47720194, y: 0.14388466}
+      - {x: -0.26466358, y: -0.42000008}
 --- !u!212 &212370860263316644
 SpriteRenderer:
   m_ObjectHideFlags: 1

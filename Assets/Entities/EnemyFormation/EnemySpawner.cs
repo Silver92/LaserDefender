@@ -45,5 +45,6 @@ public class EnemySpawner : MonoBehaviour {
         }else if (rightEdgeOfFormation >= xmax){
             movingRight = false;
         }
+        
 	}
 }
