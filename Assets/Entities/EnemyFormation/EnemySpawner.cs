@@ -18,7 +18,11 @@ public class EnemySpawner : MonoBehaviour {
         Vector3 leftBottomEdge = Camera.main.ViewportToWorldPoint(new Vector3(0,0, distanceToCamera));
         Vector3 rightTopEdge = Camera.main.ViewportToWorldPoint(new Vector3(1,1, distanceToCamera));
         xmax = rightTopEdge.x;
-        xmin = leftBottomEdge.x;
+        xmin = leftBottomEdge.x;   
+        SpawnEnemies();
+    }
+    
+    void SpawnEnemies(){
         // create enemy at each assigned position
         foreach (Transform child in transform){
             GameObject enemy = Instantiate(enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
@@ -37,7 +41,7 @@ public class EnemySpawner : MonoBehaviour {
         }else{
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
-
+        // check if the formation is going outside the playspace
         float rightEdgeOfFormation = transform.position.x + (0.5f * width);
         float leftEdgeOfFormation = transform.position.x - (0.5f * width);
         if(leftEdgeOfFormation <= xmin ){
@@ -46,5 +50,18 @@ public class EnemySpawner : MonoBehaviour {
             movingRight = false;
         }
         
+        if(AllMembersDead()) {
+            Debug.Log("Empty Formation");
+            SpawnEnemies();
+        }
 	}
+    
+    bool AllMembersDead () {
+        foreach(Transform childPositionGameObject in transform){
+            if (childPositionGameObject.childCount > 0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
