@@ -237,3 +237,4 @@
 /Users/silver/Documents/Games/LaserDefender/Temp/bin/Debug/Unity.IvyParser.dll.mdb
 /Users/silver/Documents/Games/LaserDefender/obj/Debug/Assembly-CSharp.dll
 /Users/silver/Documents/Games/LaserDefender/obj/Debug/Assembly-CSharp.pdb
+/Users/silver/Documents/Games/LaserDefender/Temp/bin/Debug/UnityEngine.WebGLModule.dll
